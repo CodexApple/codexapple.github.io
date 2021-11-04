@@ -13,9 +13,16 @@ body {
     display: flex
 }
 
-.card {
+/*.card {
     margin: auto;
     width: 600px;
+    padding: 3rem 3.5rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}*/
+
+.card {
+    margin: auto;
+    width: 1200px;
     padding: 3rem 3.5rem;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
@@ -191,7 +198,7 @@ form .row .col-2 {
     margin-left: 1vh
 }
 
-.btn {
+/*.btn {
     width: 100%;
     background-color: rgb(65, 202, 127);
     border-color: rgb(65, 202, 127);
@@ -214,6 +221,16 @@ form .row .col-2 {
 .btn:hover {
     color: white
 }
+
+.btn-danger {
+    width: 100%;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+    justify-content: center;
+    padding: 2vh 0;
+    margin-top: 3vh
+}*/
 
 input:focus::-webkit-input-placeholder {
     color: transparent

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
 	<link href='assets/css/ghostly.css' rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/sweetalert2/sweetalert2.min.css">
 	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -14,7 +15,7 @@
     <div class="nav">
         <ul class="mx-auto">
             <li><a class="tablinks" onclick="openTab(event, 'customer');" id="defaultOpen">Customer</a></li>
-            <li><a class="tablinks" onclick="Validate(event, 'order');">Order</a></li>
+            <li><a class="tablinks swalError" onclick="Validate(event, 'order');">Order</a></li>
         </ul>
     </div>
     <form action="#" method="POST">
@@ -67,6 +68,7 @@
     		<table class="table">
     			<thead>
     				<tr>
+                        <th scope="col">Unit</th>
     					<th scope="col">Product Code</th>
     					<th scope="col">Product Description</th>
     					<th scope="col">Product Quantity</th>
@@ -76,25 +78,28 @@
     			</thead>
     			<tbody>
     				<tr>
-    					<td><input type="text" placeholder="COMP20031"></td>
-    					<td>Lorem Ipsum, Lorem Ipsum</td>
-    					<td><input type="text" placeholder="10"></td>
-    					<td><input type="text" placeholder="999.99"></td>
-    					<td><input type="text" placeholder="9999.99"></td>
+                        <td><input class="form-control" type="text" required>
+    					<td><input class="form-control" type="text" required></td>
+    					<td><input class="form-control" type="text" required></td>
+    					<td><input class="form-control" type="text" required></td>
+    					<td><input class="form-control" type="text" required></td>
+    					<td><input class="form-control" type="text" required></td>
     				</tr>
     				<tr>
-    					<td><input type="text" placeholder="COMP20021"></td>
-    					<td>Lorem Ipsum, Lorem Ipsum</td>
-    					<td><input type="text" placeholder="10"></td>
-    					<td><input type="text" placeholder="999.99"></td>
-    					<td><input type="text" placeholder="9999.99"></td>
+    					<td><input class="form-control" type="text" required></td>
+                        <td><input class="form-control" type="text" required></td>
+                        <td><input class="form-control" type="text" required></td>
+                        <td><input class="form-control" type="text" required></td>
+                        <td><input class="form-control" type="text" required></td>
+                        <td><input class="form-control" type="text" required></td>
     				</tr>
     				<tr>
-    					<td><input type="text" placeholder="COMP20015"></td>
-    					<td>Lorem Ipsum, Lorem Ipsum</td>
-    					<td><input type="text" placeholder="10"></td>
-    					<td><input type="text" placeholder="999.99"></td>
-    					<td><input type="text" placeholder="9999.99"></td>
+    					<td><input class="form-control" type="text" required></td>
+                        <td><input class="form-control" type="text" required></td>
+                        <td><input class="form-control" type="text" required></td>
+                        <td><input class="form-control" type="text" required></td>
+                        <td><input class="form-control" type="text" required></td>
+                        <td><input class="form-control" type="text" required></td>
     				</tr>
     			</tbody>
     		</table>
@@ -103,15 +108,19 @@
         		<div class="row row-2"> <span id="card-inner">Total Amount</span> </div>
             	<div class="col-12"> <input type="text" placeholder="9999.99"> </div>
         	</div>
-
-    		<button class="btn d-flex mx-auto"><b>Create Order</b></button>
-    		<button class="btn d-flex mx-auto"><b>Reset Details</b></button>
+            <div class="row">
+                <div class="col-14">
+                    <button class="btn btn-success float-right"><b>Create Order</b></button>
+                    <button class="btn btn-danger float-right" style="margin-right: 5px;"><b>Reset Details</b></button>
+                </div>
+            </div>
 		</div>
     </form>
 </div>
-
 	<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
 	<script src='assets/js/validation.js'></script>
+    <script src='assets/plugins/sweetalert2/sweetalert2.min.js'></script>
+    <script src='assets/plugins/toastr/toastr.min.js'></script>
 	<script>document.getElementById("defaultOpen").click();</script>
 	<script>document.getElementById('dateNow').innerHTML = new Date().toJSON().slice(0,10).split('-').reverse().join('/');</script>
 </body>
