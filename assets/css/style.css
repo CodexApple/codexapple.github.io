@@ -1,0 +1,20 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+.instagram {
+    background: -webkit-linear-gradient(#8a3ab9, #e95950, #bc2a8d, #fccc63, #fbad50, #cd486b, #4c68d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
